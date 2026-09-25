@@ -177,13 +177,41 @@ document.addEventListener('DOMContentLoaded', () => {
     if (firstTrigger) firstTrigger.setAttribute('aria-expanded', 'true');
   }
 
-  // --- 6. Modal de Agendamento ---
+  // --- 6. Modal de Agendamento & Quick Chips ---
+  const modalChips = document.querySelectorAll('.modal-chip-btn');
+  let selectedSubject = 'Consulta Geral e Avaliação Hormonal';
+
+  const updateModalWhatsAppLinks = () => {
+    const presencialLink = document.querySelector('.modal-option-card:first-child');
+    const telemedicinaLink = document.querySelector('.modal-option-card:last-child');
+    
+    if (presencialLink) {
+      const msgPresencial = encodeURIComponent(`Olá, Dr. Cley Rocha! Gostaria de agendar uma consulta presencial em São Paulo com foco em: ${selectedSubject}.`);
+      presencialLink.href = `https://wa.me/5511999999999?text=${msgPresencial}`;
+    }
+
+    if (telemedicinaLink) {
+      const msgOnline = encodeURIComponent(`Olá, Dr. Cley Rocha! Gostaria de agendar uma consulta online (Telemedicina) com foco em: ${selectedSubject}.`);
+      telemedicinaLink.href = `https://wa.me/5511999999999?text=${msgOnline}`;
+    }
+  };
+
+  modalChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      modalChips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      selectedSubject = chip.getAttribute('data-subject') || chip.textContent.trim();
+      updateModalWhatsAppLinks();
+    });
+  });
+
   const openModal = (e) => {
     if (e) e.preventDefault();
     if (modal) {
       modal.classList.add('active');
       modal.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
+      updateModalWhatsAppLinks();
     }
   };
 

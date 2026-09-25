@@ -38,9 +38,10 @@
       <nav class="nav-menu" id="navMenu">
         <ul class="nav-links">
           <li><a href="#hero" class="nav-link">Dr. Cley</a></li>
-          <li><a href="#areas" class="nav-link">Tireoide</a></li>
-          <li><a href="#areas" class="nav-link">Emagrecimento</a></li>
-          <li><a href="#integrada" class="nav-link">Saúde Metabólica</a></li>
+          <li><a href="#areas" class="nav-link">Áreas de Atuação</a></li>
+          <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+          <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+          <li><a href="#integrada" class="nav-link">Endocrinologia Integrada</a></li>
           <li><a href="#faq" class="nav-link">FAQ</a></li>
           <li><a href="#conteudos" class="nav-link">Conteúdos</a></li>
           <li><a href="#contato" class="nav-link">Contato</a></li>
@@ -50,10 +51,12 @@
       <div class="nav-actions">
         <button type="button" class="btn btn-pill-outline open-modal-btn" aria-label="Abrir agendamento de consulta">
           <span>Agendar consulta</span>
-          <svg class="arrow-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
+          <span class="btn-arrow-circle">
+            <svg class="arrow-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
         </button>
 
         <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
@@ -74,35 +77,37 @@
 
     <div class="container hero-container">
       <div class="hero-content">
-        <!-- Sub-tagline -->
+        <!-- Sub-tagline at top -->
         <div class="hero-tagline">
           <span class="tagline-text">ENDOCRINOLOGIA • TIREOIDE • EMAGRECIMENTO • SAÚDE METABÓLICA</span>
           <span class="tagline-line"></span>
         </div>
 
-        <!-- Headline -->
+        <!-- Headline Refinada de Alto Impacto -->
         <h1 class="hero-title">
-          Ciência, cuidado e<br>
-          <em class="hero-title-italic">equilíbrio hormonal.</em>
+          Medicina de precisão para o seu<br>
+          <em class="hero-title-italic">equilíbrio hormonal e longevidade.</em>
         </h1>
 
         <!-- Subtitle -->
         <p class="hero-subtitle">
-          Acompanhamento médico especializado em tireoide, emagrecimento e saúde metabólica, com foco em resultados reais, qualidade de vida e olhar individualizado.
+          Diagnóstico aprofundado e acompanhamento médico especializado em tireoide, emagrecimento sustentável e saúde metabólica com atendimento em São Paulo e online em todo o Brasil.
         </p>
 
         <!-- CTA Buttons -->
         <div class="hero-cta-group">
-          <button type="button" class="btn btn-gold-primary open-modal-btn">
+          <button type="button" class="btn btn-gold-pill open-modal-btn">
             <span>Agendar consulta</span>
-            <svg class="arrow-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
+            <span class="btn-arrow-circle">
+              <svg class="arrow-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
           </button>
 
-          <a href="#integrada" class="hero-link-secondary">
-            <span>Conheça o Dr. Cley</span>
+          <a href="#como-funciona" class="hero-link-secondary">
+            <span>Conheça o acompanhamento</span>
             <span class="gold-dash"></span>
           </a>
         </div>
@@ -112,24 +117,58 @@
       <div class="hero-visual" id="heroVisual">
         <div class="doctor-image-wrapper">
           <img src="assets/cley_rocha_header.jpg" alt="Dr. Cley Rocha - Médico Endocrinologista" class="doctor-photo" id="heroDoctorImg">
-          <div class="photo-ambient-glow"></div>
+          <div class="photo-ambient-fade"></div>
         </div>
 
-        <!-- Right Side Badge: Saúde Hormonal -->
-        <div class="hero-badge badge-vertical" id="badgeVertical">
-          <span class="badge-line"></span>
-          <span class="badge-text">SAÚDE HORMONAL PARA UMA VIDA MAIS PLENA</span>
-        </div>
+        <!-- Right Side Badges Stacked -->
+        <div class="hero-side-badges">
+          <!-- Badge: Saúde Hormonal -->
+          <div class="hero-badge badge-stacked-quote" id="badgeVertical">
+            <span class="badge-accent-line"></span>
+            <div class="badge-lines">
+              <span>SAÚDE</span>
+              <span>HORMONAL</span>
+              <span>PARA UMA</span>
+              <span>VIDA MAIS</span>
+              <span>PLENA</span>
+            </div>
+          </div>
 
-        <!-- Bottom Right Badge: Assinatura Dr. Cley Rocha -->
-        <div class="hero-badge badge-signature" id="badgeSignature">
-          <div class="signature-name">Cley Rocha</div>
-          <div class="signature-role">ENDOCRINOLOGISTA</div>
-          <div class="signature-title">DOUTOR</div>
+          <!-- Badge: Assinatura Dr. Cley Rocha -->
+          <div class="hero-badge badge-signature" id="badgeSignature">
+            <div class="signature-name">Cley Rocha</div>
+            <div class="signature-role">ENDOCRINOLOGISTA</div>
+            <div class="signature-title">DOUTOR</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ==================== BIOMARKERS & CLINICAL SCOPES TICKER ==================== -->
+  <div class="biomarkers-ticker" aria-label="Escopos clínicos e biomarcadores atendidos">
+    <div class="ticker-track">
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>TSH, T4 Livre & Anticorpos</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Composição Corporal & Bioimpedância</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Resistência à Insulina (HOMA-IR)</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Nódulos & Ultrassonografia de Tireoide</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Otimização Metabólica & Vitalidade</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Emagrecimento Saudável e Sustentável</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Terapia de Reposição Hormonal Segura</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Menopausa, Climatério & Andropausa</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Esteatose Hepática & Painel Lipídico</span></div>
+      <!-- Seamless loop duplicate -->
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>TSH, T4 Livre & Anticorpos</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Composição Corporal & Bioimpedância</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Resistência à Insulina (HOMA-IR)</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Nódulos & Ultrassonografia de Tireoide</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Otimização Metabólica & Vitalidade</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Emagrecimento Saudável e Sustentável</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Terapia de Reposição Hormonal Segura</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Menopausa, Climatério & Andropausa</span></div>
+      <div class="ticker-item"><span class="ticker-badge-dot"></span><span>Esteatose Hepática & Painel Lipídico</span></div>
+    </div>
+  </div>
 
   <!-- ==================== ÁREAS DE ATUAÇÃO ==================== -->
   <section class="section areas-section" id="areas">
@@ -214,6 +253,133 @@
           <p class="area-desc">
             Avaliação e tratamento de desequilíbrios hormonais em todas as fases da vida.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COMO FUNCIONA O ACOMPANHAMENTO ==================== -->
+  <section class="journey-section" id="como-funciona">
+    <div class="container">
+      <div class="journey-header">
+        <div class="section-tag-inline" style="justify-content: center;">
+          <span class="section-tag">JORNADA DO PACIENTE</span>
+          <span class="tag-gold-line"></span>
+        </div>
+        <h2 class="journey-headline">
+          Como funciona o seu acompanhamento
+        </h2>
+        <p class="journey-subtitle">
+          Um método estruturado em quatro etapas para compreender sua fisiologia a fundo e construir resultados reais e duradouros.
+        </p>
+      </div>
+
+      <div class="journey-grid">
+        <!-- Passo 1 -->
+        <div class="journey-card" data-tilt>
+          <div class="journey-step-tag">01</div>
+          <h3 class="journey-card-title">Anamnese & Escuta Aprofundada</h3>
+          <p class="journey-card-desc">
+            Consulta estendida de 60 a 90 minutos para mapear seu histórico de saúde, rotina de sono, disposição diária, histórico familiar e queixas clínicas específicas.
+          </p>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="journey-card" data-tilt>
+          <div class="journey-step-tag">02</div>
+          <h3 class="journey-card-title">Mapeamento Diagnóstico Preciso</h3>
+          <p class="journey-card-desc">
+            Solicitação de painel hormonal e metabólico completo sob medida, avaliação por bioimpedância médica e exames de imagem quando indicados.
+          </p>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="journey-card" data-tilt>
+          <div class="journey-step-tag">03</div>
+          <h3 class="journey-card-title">Protocolo Clínico Sob Medida</h3>
+          <p class="journey-card-desc">
+            Elaboração de conduta terapêutica com medicações modernas baseadas em evidências, reposições hormonais seguras e orientações metabólicas integradas.
+          </p>
+        </div>
+
+        <!-- Passo 4 -->
+        <div class="journey-card" data-tilt>
+          <div class="journey-step-tag">04</div>
+          <h3 class="journey-card-title">Monitoramento & Evolução Contínua</h3>
+          <p class="journey-card-desc">
+            Reavaliações periódicas dos biomarcadores, ajustes de dosagem e suporte direto entre consultas para garantir segurança e sustentabilidade a longo prazo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DIFERENCIAIS DO CUIDADO (COMPARISON) ==================== -->
+  <section class="comparison-section" id="diferenciais">
+    <div class="container">
+      <div class="comparison-header">
+        <div class="section-tag-inline" style="justify-content: center;">
+          <span class="section-tag">POR QUE É DIFERENTE</span>
+          <span class="tag-gold-line"></span>
+        </div>
+        <h2 class="journey-headline">
+          Medicina de Precisão vs. Abordagem Convencional
+        </h2>
+        <p class="journey-subtitle">
+          Entenda por que o modelo de cuidado individualizado do Dr. Cley Rocha entrega resultados superiores e sustentáveis.
+        </p>
+      </div>
+
+      <div class="comparison-wrapper">
+        <div class="comparison-header-row">
+          <div class="comp-col-feature">Dimensão Clínica</div>
+          <div class="comp-col-trad">Atendimento Convencional</div>
+          <div class="comp-col-doctor">Dr. Cley Rocha</div>
+        </div>
+
+        <div class="comparison-row">
+          <div class="comp-cell-label">
+            Tempo de Consulta
+            <small>Duração e dedicação</small>
+          </div>
+          <div class="comp-cell-trad">Consultas de 10 a 15 min, focadas na queixa isolada.</div>
+          <div class="comp-cell-doctor">60 a 90 minutos de escuta atenta e exame clínico minucioso.</div>
+        </div>
+
+        <div class="comparison-row">
+          <div class="comp-cell-label">
+            Investigação Diagnóstica
+            <small>Profundidade dos exames</small>
+          </div>
+          <div class="comp-cell-trad">Exames básicos e padronizados sem correlação sistêmica.</div>
+          <div class="comp-cell-doctor">Painel hormonal e metabólico aprofundado com bioimpedância.</div>
+        </div>
+
+        <div class="comparison-row">
+          <div class="comp-cell-label">
+            Estratégia Terapêutica
+            <small>Personalização do plano</small>
+          </div>
+          <div class="comp-cell-trad">Fórmulas prontas e restrições genéricas padronizadas.</div>
+          <div class="comp-cell-doctor">Protocolo sob medida para sua fisiologia, rotina e objetivos.</div>
+        </div>
+
+        <div class="comparison-row">
+          <div class="comp-cell-label">
+            Suporte e Contato
+            <small>Interação pós-consulta</small>
+          </div>
+          <div class="comp-cell-trad">Retorno apenas meses depois, sem canal de dúvidas.</div>
+          <div class="comp-cell-doctor">Canal dedicado para acompanhamento de exames e evolução.</div>
+        </div>
+
+        <div class="comparison-row">
+          <div class="comp-cell-label">
+            Foco Final
+            <small>Objetivo do tratamento</small>
+          </div>
+          <div class="comp-cell-trad">Apenas mascarar sintomas ou bater metas numéricas imediatas.</div>
+          <div class="comp-cell-doctor">Equilíbrio da causa-raiz, vitalidade e longevidade sustentável.</div>
         </div>
       </div>
     </div>
@@ -649,7 +815,18 @@
       <div class="modal-header">
         <div class="modal-tag">ATENDIMENTO EXCLUSIVO</div>
         <h3 id="modalTitle" class="modal-headline">Agende sua consulta</h3>
-        <p class="modal-subtitle">Escolha o formato ideal para o seu atendimento com o Dr. Cley Rocha:</p>
+        <p class="modal-subtitle">Escolha o foco do seu cuidado e o formato de atendimento:</p>
+      </div>
+
+      <!-- Quick Condition Chips (inspired by MyHealthPrac) -->
+      <div class="modal-chips-wrapper">
+        <span class="modal-chips-label">Qual é o seu principal foco?</span>
+        <div class="modal-chips-row" id="modalChips">
+          <button type="button" class="modal-chip-btn active" data-subject="Consulta Geral e Avaliação Hormonal">Geral / Hormonal</button>
+          <button type="button" class="modal-chip-btn" data-subject="Investigação e Tratamento de Tireoide">Tireoide</button>
+          <button type="button" class="modal-chip-btn" data-subject="Programa de Emagrecimento Saudável">Emagrecimento</button>
+          <button type="button" class="modal-chip-btn" data-subject="Saúde Metabólica e Resistência à Insulina">Saúde Metabólica</button>
+        </div>
       </div>
 
       <div class="modal-options">
