@@ -338,19 +338,19 @@ ul {
 /* --- Hero Section --- */
 .hero-section {
   position: relative;
-  min-height: 100vh;
+  min-height: 94vh;
   padding-top: 140px;
-  padding-bottom: 80px;
+  padding-bottom: 0;
   background: radial-gradient(circle at 75% 30%, #15191f 0%, var(--color-obsidian) 70%);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   overflow: hidden;
 }
 
 /* Monumental Typography Background - Bold & Crisp Ivory Serif (matching media_1790359279231) */
 .monumental-bg {
   position: absolute;
-  top: 170px;
+  top: 160px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -380,11 +380,12 @@ ul {
 
 .hero-container {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  align-items: flex-start;
-  gap: 30px;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: flex-end;
+  gap: 20px;
   position: relative;
   z-index: 3;
+  width: 100%;
 }
 
 /* Hero Content */
@@ -392,6 +393,7 @@ ul {
   max-width: 580px;
   position: relative;
   z-index: 4;
+  padding-bottom: 70px;
 }
 
 .hero-tagline {
@@ -477,46 +479,48 @@ ul {
 .hero-visual {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
 }
 
 .doctor-image-wrapper {
   position: relative;
   width: 100%;
-  max-width: 490px;
-  aspect-ratio: 4/5;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  max-width: 640px;
+  overflow: visible;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: transparent;
+  box-shadow: none;
 }
 
 .doctor-photo {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 15%;
-  mask-image: radial-gradient(ellipse 95% 85% at 50% 45%, black 65%, transparent 100%);
-  -webkit-mask-image: radial-gradient(ellipse 95% 85% at 50% 45%, black 65%, transparent 100%);
-  transition: transform 0.6s ease;
+  min-width: 500px;
+  max-width: 640px;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.85));
+  mask-image: linear-gradient(to bottom, black 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 88%, transparent 100%);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+  transform-origin: bottom center;
 }
 
 .doctor-image-wrapper:hover .doctor-photo {
   transform: scale(1.02);
-}
-
-.photo-ambient-glow {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  box-shadow: inset 0 0 80px rgba(9, 11, 13, 0.9);
+  filter: drop-shadow(0 28px 55px rgba(0, 0, 0, 0.95));
 }
 
 /* Hero Side Badges Stacked (matching media_1790359279231) */
 .hero-side-badges {
   position: absolute;
-  right: -30px;
-  top: 36%;
+  right: -25px;
+  top: 30%;
   display: flex;
   flex-direction: column;
   gap: 32px;
