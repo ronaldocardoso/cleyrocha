@@ -400,7 +400,9 @@ ul {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: clamp(70px, 9vw, 110px);
+  position: relative;
+  top: -50px;
+  margin-bottom: clamp(35px, 6vw, 75px);
   white-space: nowrap;
   flex-wrap: nowrap;
   max-width: 100%;
@@ -1877,6 +1879,11 @@ ul {
 
   .doctor-image-wrapper {
     max-width: 360px;
+  }
+
+  .hero-tagline {
+    top: -20px;
+    margin-bottom: clamp(25px, 5vw, 45px);
   }
 
   .monumental-bg {

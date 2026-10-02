@@ -53,7 +53,7 @@ export default function Hero({ onOpenBooking }) {
           className="max-w-xl mx-auto lg:mx-0 text-center lg:text-left"
         >
           {/* Sub-tagline */}
-          <div className="flex items-center justify-center lg:justify-start gap-3.5 mb-6 whitespace-nowrap overflow-hidden">
+          <div className="flex items-center justify-center lg:justify-start gap-3.5 mb-6 -translate-y-[50px] whitespace-nowrap overflow-hidden">
             <span className="text-[11px] tracking-[0.2em] font-semibold text-gold-champagne uppercase whitespace-nowrap">
               ENDOCRINOLOGIA • TIREOIDE • EMAGRECIMENTO • SAÚDE METABÓLICA
             </span>
