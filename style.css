@@ -435,6 +435,8 @@ ul {
   color: #ffffff;
   margin-bottom: 22px;
   letter-spacing: -0.01em;
+  position: relative;
+  top: 40px;
 }
 
 .hero-title-nowrap {
@@ -461,6 +463,8 @@ ul {
   line-height: 1.7;
   margin-bottom: 38px;
   font-weight: 300;
+  position: relative;
+  top: 40px;
 }
 
 .hero-cta-group {
@@ -1884,6 +1888,11 @@ ul {
   .hero-tagline {
     top: -50px;
     margin-bottom: clamp(15px, 3.5vw, 30px);
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    top: 20px;
   }
 
   .monumental-bg {
