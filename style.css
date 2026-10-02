@@ -401,8 +401,8 @@ ul {
   align-items: center;
   gap: 12px;
   position: relative;
-  top: -50px;
-  margin-bottom: clamp(35px, 6vw, 75px);
+  top: -80px;
+  margin-bottom: clamp(25px, 5vw, 55px);
   white-space: nowrap;
   flex-wrap: nowrap;
   max-width: 100%;
@@ -1882,8 +1882,8 @@ ul {
   }
 
   .hero-tagline {
-    top: -20px;
-    margin-bottom: clamp(25px, 5vw, 45px);
+    top: -35px;
+    margin-bottom: clamp(20px, 4vw, 40px);
   }
 
   .monumental-bg {
