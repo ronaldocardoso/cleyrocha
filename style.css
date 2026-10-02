@@ -543,7 +543,7 @@ ul {
 .hero-side-badges {
   position: absolute;
   right: -25px;
-  top: 22%;
+  top: calc(22% + 70px);
   display: flex;
   flex-direction: column;
   gap: 32px;
