@@ -90,8 +90,8 @@ export default function Hero({ onOpenBooking }) {
               alt="Dr. Cley Rocha - Endocrinologista"
               className="w-full min-w-[340px] sm:min-w-[500px] max-w-[640px] h-auto max-h-[85vh] object-contain drop-shadow-[0_20px_45px_rgba(0,0,0,0.85)] transition-transform duration-700 hover:scale-[1.02]"
               style={{
-                maskImage: 'linear-gradient(to bottom, black 88%, transparent 100%)',
-                WebkitMaskImage: 'linear-gradient(to bottom, black 88%, transparent 100%)'
+                maskImage: 'linear-gradient(to bottom, black 92%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to bottom, black 92%, transparent 100%)'
               }}
             />
           </div>
