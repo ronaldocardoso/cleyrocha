@@ -61,7 +61,7 @@ export default function Hero({ onOpenBooking }) {
           </div>
 
           {/* Title */}
-          <h1 className="font-editorial text-[clamp(1.9rem,3.4vw,3.25rem)] font-normal leading-[1.16] text-white mb-6 translate-y-[40px]">
+          <h1 className="font-editorial text-[clamp(1.9rem,3.4vw,3.25rem)] font-normal leading-[1.16] text-white mb-6 translate-y-[70px]">
             <span className="whitespace-nowrap sm:inline">Medicina de precisão para o seu</span> <br className="hidden sm:block" />
             <em className="font-editorial italic text-gold-champagne font-normal not-italic:font-normal">
               equilíbrio hormonal.
@@ -69,7 +69,7 @@ export default function Hero({ onOpenBooking }) {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-base sm:text-lg text-slate-300 font-light leading-relaxed mb-6 max-w-lg mx-auto lg:mx-0 translate-y-[40px]">
+          <p className="text-base sm:text-lg text-slate-300 font-light leading-relaxed mb-6 max-w-lg mx-auto lg:mx-0 translate-y-[70px]">
             Acompanhamento médico especializado em tireoide, emagrecimento e saúde metabólica, com foco em resultados reais, qualidade de vida e olhar individualizado.
           </p>
         </motion.div>
