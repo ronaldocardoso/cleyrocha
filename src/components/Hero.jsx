@@ -96,19 +96,7 @@ export default function Hero({ onOpenBooking }) {
             />
           </div>
 
-          {/* Right Side Vertical Badge: Saúde Hormonal */}
-          <motion.div
-            style={{ y: yBadge }}
-            animate={{
-              x: mousePos.x * 16,
-            }}
-            className="hidden xl:flex absolute -right-6 top-1/4 items-center gap-3 [writing-mode:vertical-rl] pointer-events-none select-none"
-          >
-            <span className="w-[1px] h-10 bg-gold-gradient" />
-            <span className="text-[10px] tracking-[0.24em] font-semibold text-gold-champagne uppercase opacity-90">
-              SAÚDE HORMONAL PARA UMA VIDA MAIS PLENA
-            </span>
-          </motion.div>
+
 
           {/* Bottom Right Badge: Assinatura Dr. Cley Rocha */}
           <motion.div
