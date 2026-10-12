@@ -1126,6 +1126,12 @@ ul {
   margin-bottom: 34px;
 }
 
+.thyroid-cta-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
 .thyroid-photo-card {
   position: relative;
   border-radius: var(--radius-lg);
@@ -1268,12 +1274,13 @@ ul {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: 72px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .doctor-profile-visual {
-  position: sticky;
-  top: 110px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .doctor-profile-card {
@@ -1415,38 +1422,37 @@ ul {
 }
 
 /* --- ILUSTRAÇÃO DA TIROXINA (DR. CLEY) --- */
+.thyroxine-wrap,
 .thyroxine-seal-card {
-  margin-top: 48px;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px 20px;
-  background: rgba(20, 24, 31, 0.35);
-  border: 1px solid rgba(229, 211, 179, 0.12);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
-  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
-}
-
-.thyroxine-seal-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(229, 211, 179, 0.25);
-  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.45);
+  width: 100%;
+  min-height: 260px;
+  margin-top: 24px;
+  padding: 0;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 .thyroxine-white-img {
   width: 100%;
-  max-width: 250px;
+  max-width: 380px;
   height: auto;
   opacity: 0.3;
   display: block;
+  margin: 0 auto;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+.thyroxine-wrap:hover .thyroxine-white-img,
 .thyroxine-seal-card:hover .thyroxine-white-img {
-  opacity: 0.45;
+  opacity: 0.5;
   transform: scale(1.02);
 }
 
@@ -1664,9 +1670,10 @@ ul {
 }
 
 .doctor-cta-subtext {
-  font-size: 0.82rem;
-  color: #8391a2;
+  font-size: 1.05rem;
+  color: var(--gold-champagne);
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 /* --- PRÓXIMO PASSO (CTA) --- */
