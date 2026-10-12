@@ -66,11 +66,10 @@ export default function Footer({ onOpenBooking }) {
             </h4>
             <ul className="flex flex-col gap-3 text-sm">
               <li><a href="#hero" className="hover:text-gold-champagne transition-colors">Início</a></li>
-              <li><a href="#areas" className="hover:text-gold-champagne transition-colors">Tireoide</a></li>
-              <li><a href="#areas" className="hover:text-gold-champagne transition-colors">Emagrecimento</a></li>
-              <li><a href="#integrada" className="hover:text-gold-champagne transition-colors">Saúde Metabólica</a></li>
-              <li><a href="#faq" className="hover:text-gold-champagne transition-colors">FAQ</a></li>
-              <li><a href="#conteudos" className="hover:text-gold-champagne transition-colors">Conteúdos</a></li>
+              <li><a href="#dr-cley" className="hover:text-gold-champagne transition-colors">Sobre o Dr. Cley</a></li>
+              <li><a href="#areas" className="hover:text-gold-champagne transition-colors">Áreas de Atuação</a></li>
+              <li><a href="#integrada" className="hover:text-gold-champagne transition-colors">Endocrinologia Integrada</a></li>
+              <li><a href="#faq" className="hover:text-gold-champagne transition-colors">Dúvidas Frequentes</a></li>
               <li><a href="#contato" className="hover:text-gold-champagne transition-colors">Contato</a></li>
             </ul>
           </div>
@@ -152,6 +151,24 @@ export default function Footer({ onOpenBooking }) {
               <p className="text-xs text-slate-400 leading-relaxed mb-4">
                 Doutorado em Endocrinologia pela Faculdade de Medicina da Universidade de São Paulo
               </p>
+
+              {/* Selo Doctoralia */}
+              <div className="mb-4 bg-white rounded-xl p-2.5 flex items-center gap-3 border border-gold-champagne/40 shadow-md">
+                <img
+                  src="/assets/badge_doctoralia.svg"
+                  alt="Certificado Doctoralia"
+                  className="h-8 w-auto shrink-0"
+                  loading="lazy"
+                />
+                <div className="flex flex-col">
+                  <span className="text-xs font-bold text-slate-900 leading-tight">
+                    Certificado Doctoralia
+                  </span>
+                  <span className="text-[10px] font-semibold text-[#00a085]">
+                    Excelência em Atendimento
+                  </span>
+                </div>
+              </div>
 
               <button
                 onClick={onOpenBooking}

@@ -104,16 +104,13 @@ export default function Hero({ onOpenBooking }) {
               x: mousePos.x * -10,
               y: mousePos.y * -8,
             }}
-            className="absolute right-0 bottom-6 bg-obsidian/85 backdrop-blur-md border border-gold-champagne/20 rounded-lg px-5 py-3.5 text-right shadow-2xl pointer-events-none select-none"
+            className="absolute right-0 bottom-6 bg-obsidian/85 backdrop-blur-md border border-gold-champagne/20 rounded-lg px-5 py-3.5 text-right shadow-2xl pointer-events-none select-none max-w-[280px]"
           >
             <div className="font-signature text-3xl sm:text-4xl text-gold-champagne leading-none mb-1">
               Cley Rocha
             </div>
-            <div className="text-[9px] tracking-[0.22em] font-bold text-white leading-tight uppercase">
-              ENDOCRINOLOGISTA
-            </div>
-            <div className="text-[8px] tracking-[0.26em] font-medium text-gold-muted uppercase">
-              DOUTOR
+            <div className="text-[10px] sm:text-[11px] font-medium text-slate-200 leading-tight">
+              Doutorado em Endocrinologia pela Faculdade de Medicina da Universidade de São Paulo
             </div>
           </motion.div>
         </motion.div>

@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-obsidian text-white overflow-x-hidden;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #f7ebd5 0%, #d4af37 50%, #a67c1e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, #f7ebd5 0%, #d4af37 50%, #a67c1e 100%);
+  }
+
+  .text-monumental-gradient {
+    background: linear-gradient(180deg, rgba(245, 235, 216, 0.08) 0%, rgba(212, 175, 55, 0.015) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Custom radial mask for doctor portrait */
+.doctor-mask {
+  mask-image: radial-gradient(ellipse 95% 85% at 50% 45%, black 65%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 95% 85% at 50% 45%, black 65%, transparent 100%);
+}

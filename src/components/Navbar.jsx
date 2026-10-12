@@ -14,9 +14,10 @@ export default function Navbar({ onOpenBooking }) {
   }, []);
 
   const navLinks = [
-    { label: 'Dr. Cley', href: '#hero' },
+    { label: 'Dr. Cley', href: '#dr-cley' },
+    { label: 'Áreas de Atuação', href: '#areas' },
     { label: 'Endocrinologia Integrada', href: '#integrada' },
-    { label: 'Blog', href: '#conteudos' },
+    { label: 'Dúvidas', href: '#faq' },
     { label: 'Contato', href: '#contato' },
   ];
 
