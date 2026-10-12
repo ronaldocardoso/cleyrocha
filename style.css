@@ -2325,11 +2325,7 @@ ul {
   }
 
   .monumental-bg {
-    top: 90px;
-  }
-
-  .monumental-text {
-    opacity: 0.22;
+    display: none;
   }
 
   .hero-category-pills {
@@ -2523,33 +2519,25 @@ ul {
     color: var(--text-dark-secondary);
   }
 
-  /* Marca d agua refinada sem disputar com texto */
+  /* Ocultando texto monumental de fundo no mobile para evitar sobreposicao */
   .monumental-bg {
-    top: 75px;
-    padding: 0 12px;
+    display: none;
   }
 
-  .monumental-text {
-    font-size: clamp(2.8rem, 13vw, 4.6rem);
-    letter-spacing: 0.08em;
-    color: #efe5d5;
-    opacity: 0.12;
-    text-shadow: none;
-  }
-
-  /* Imagem do Doutor ampliada no Hero Mobile */
+  /* Imagem do Doutor significativamente ampliada no Hero Mobile */
   .hero-visual {
-    margin-top: 5px;
+    margin-top: 8px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: visible;
   }
 
   .doctor-image-wrapper {
     width: 100%;
-    max-width: min(100%, 460px);
+    max-width: 520px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -2558,17 +2546,19 @@ ul {
   }
 
   .doctor-photo {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
+    width: 124%;
+    max-width: 125%;
+    min-width: 360px;
     height: auto;
-    max-height: 75vh;
+    max-height: none;
     object-fit: contain;
-    transform: scale(1.08);
-    transform-origin: bottom center;
-    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.9));
-    mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+    transform: scale(1.24);
+    transform-origin: top center;
+    margin-top: -6px;
+    margin-bottom: -15px;
+    filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.95));
+    mask-image: linear-gradient(to bottom, black 88%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 88%, transparent 100%);
   }
 
   /* Assinatura fixada no canto inferior sem vazar a tela */
@@ -2727,8 +2717,11 @@ ul {
   }
 
   .doctor-photo {
-    max-height: 70vh;
-    transform: scale(1.1);
+    width: 128%;
+    max-width: 130%;
+    min-width: 330px;
+    transform: scale(1.28);
+    transform-origin: top center;
   }
 
   .hero-side-badges {
