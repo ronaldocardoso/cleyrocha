@@ -187,12 +187,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (presencialLink) {
       const msgPresencial = encodeURIComponent(`Olá, Dr. Cley Rocha! Gostaria de agendar uma consulta presencial em São Paulo com foco em: ${selectedSubject}.`);
-      presencialLink.href = `https://wa.me/5511999999999?text=${msgPresencial}`;
+      presencialLink.href = `https://wa.me/5511982633335?text=${msgPresencial}`;
     }
 
     if (telemedicinaLink) {
       const msgOnline = encodeURIComponent(`Olá, Dr. Cley Rocha! Gostaria de agendar uma consulta online (Telemedicina) com foco em: ${selectedSubject}.`);
-      telemedicinaLink.href = `https://wa.me/5511999999999?text=${msgOnline}`;
+      telemedicinaLink.href = `https://wa.me/5511982633335?text=${msgOnline}`;
     }
   };
 
