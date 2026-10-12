@@ -55,12 +55,6 @@ export default function TireoideFoco({ onOpenBooking }) {
               alt="Perfil médico com iluminação da glândula tireoide"
               className="w-full h-auto aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            {/* Vertical Quote Badge */}
-            <div className="hidden sm:flex absolute right-6 top-1/2 -translate-y-1/2 [writing-mode:vertical-rl] bg-obsidian/80 backdrop-blur-md px-3.5 py-6 border-l border-gold-champagne rounded-sm shadow-xl pointer-events-none select-none">
-              <span className="text-[10px] tracking-[0.24em] font-semibold text-gold-champagne uppercase">
-                UMA TIREOIDE SAUDÁVEL TRANSFORMA SUA ENERGIA, SEU HUMOR E SUA VIDA.
-              </span>
-            </div>
           </div>
         </motion.div>
       </div>

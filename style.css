@@ -1414,6 +1414,42 @@ ul {
   margin-top: 3px;
 }
 
+/* --- ILUSTRAÇÃO DA TIROXINA (DR. CLEY) --- */
+.thyroxine-seal-card {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 20px;
+  background: rgba(20, 24, 31, 0.55);
+  border: 1px solid rgba(229, 211, 179, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.thyroxine-seal-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(229, 211, 179, 0.35);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.6);
+}
+
+.thyroxine-white-img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  opacity: 0.5;
+  display: block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.thyroxine-seal-card:hover .thyroxine-white-img {
+  opacity: 0.7;
+  transform: scale(1.02);
+}
+
 /* Selo Doctoralia no Rodapé */
 .doctor-doctoralia-seal {
   margin: 14px 0 14px;
