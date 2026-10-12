@@ -1733,7 +1733,41 @@ ul {
   font-size: 0.82rem;
   color: #657180;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
+}
+
+.developer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #7b8897;
+}
+
+.developer-label {
+  color: #7b8897;
+  font-size: 0.82rem;
+}
+
+.developer-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.developer-logo {
+  height: 20px;
+  width: auto;
+  display: block;
+  vertical-align: middle;
+  border-radius: 3px;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
+}
+
+.developer-link:hover .developer-logo {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 10px rgba(230, 0, 126, 0.6));
 }
 
 /* --- MODAL DE AGENDAMENTO --- */

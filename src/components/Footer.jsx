@@ -165,8 +165,26 @@ export default function Footer({ onOpenBooking }) {
 
         {/* Bottom Rights */}
         <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© 2026 Dr. Cley Rocha. Todos os direitos reservados.</p>
-          <p>Desenvolvido com propósito.</p>
+          <p>© 2026 Dr. Cley Rocha de Farias. Todos os direitos reservados.</p>
+          <div className="flex items-center gap-2 text-slate-400">
+            <span>Desenvolvido por</span>
+            <a
+              href="https://www.ronaldocardoso.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center hover:opacity-80 transition-opacity"
+              title="Ronaldo Cardoso"
+              aria-label="Website do desenvolvedor Ronaldo Cardoso"
+            >
+              <img
+                src="/assets/logo_ronaldocardoso.png"
+                alt="Ronaldo Cardoso"
+                className="h-5 w-auto object-contain hover:scale-110 transition-transform"
+                width={20}
+                height={20}
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
