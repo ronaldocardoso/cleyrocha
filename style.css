@@ -1429,8 +1429,9 @@ ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 260px;
-  margin-top: 24px;
+  position: relative;
+  min-height: 320px;
+  margin-top: 32px;
   padding: 0;
   background: transparent !important;
   border: none !important;
@@ -1438,22 +1439,25 @@ ul {
   box-shadow: none !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
+  overflow: visible;
 }
 
 .thyroxine-white-img {
-  width: 100%;
-  max-width: 380px;
+  width: 125%;
+  max-width: 540px;
+  min-width: 440px;
   height: auto;
-  opacity: 0.3;
+  opacity: 0.45;
   display: block;
   margin: 0 auto;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.4));
+  transition: opacity 0.3s ease, transform 0.4s ease;
 }
 
 .thyroxine-wrap:hover .thyroxine-white-img,
 .thyroxine-seal-card:hover .thyroxine-white-img {
-  opacity: 0.5;
-  transform: scale(1.02);
+  opacity: 0.65;
+  transform: scale(1.03);
 }
 
 /* Selo Doctoralia no Rodapé */
@@ -2337,6 +2341,12 @@ ul {
     top: 0;
     max-width: 440px;
     margin: 0 auto;
+  }
+
+  .thyroxine-white-img {
+    width: 100%;
+    max-width: 420px;
+    min-width: unset;
   }
 
   .footer-container {
