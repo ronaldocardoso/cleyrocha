@@ -1,5 +1,4 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function TireoideFoco({ onOpenBooking }) {
@@ -29,16 +28,6 @@ export default function TireoideFoco({ onOpenBooking }) {
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 font-light">
             Alterações na tireoide podem afetar energia, peso, humor e muitos aspectos da sua saúde. O diagnóstico precoce e o tratamento adequado fazem toda a diferença.
           </p>
-
-          <button
-            onClick={onOpenBooking}
-            className="inline-flex items-center gap-2.5 text-base font-semibold text-gold-champagne hover:text-white transition-all duration-300 group"
-          >
-            <span className="border-b border-gold-champagne/50 pb-0.5 group-hover:border-white">
-              Saiba mais
-            </span>
-            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-          </button>
         </motion.div>
 
         {/* Right: Photographic Visual with glowing Thyroid */}

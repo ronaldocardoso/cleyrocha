@@ -97,11 +97,11 @@ export default function DoctorProfile({ onOpenBooking }) {
             </div>
 
             {/* Imagem da Tiroxina (T4) */}
-            <div className="mt-5 p-6 rounded-2xl bg-[#14181f]/55 border border-gold-champagne/20 backdrop-blur-md flex items-center justify-center shadow-[0_16px_36px_rgba(0,0,0,0.45)] transition-all duration-300 hover:border-gold-champagne/35 group">
+            <div className="mt-12 p-6 rounded-2xl bg-[#14181f]/35 border border-gold-champagne/15 backdrop-blur-md flex items-center justify-center shadow-[0_16px_36px_rgba(0,0,0,0.3)] transition-all duration-300 hover:border-gold-champagne/25 group">
               <img
                 src="/assets/thyroxine_white.png"
                 alt="Estrutura Molecular da Tiroxina (T4)"
-                className="w-full max-w-[260px] h-auto object-contain opacity-50 group-hover:opacity-70 group-hover:scale-[1.02] transition-all duration-300"
+                className="w-full max-w-[250px] h-auto object-contain opacity-30 group-hover:opacity-45 group-hover:scale-[1.02] transition-all duration-300"
                 loading="lazy"
               />
             </div>

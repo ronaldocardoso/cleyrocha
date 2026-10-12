@@ -1416,37 +1416,37 @@ ul {
 
 /* --- ILUSTRAÇÃO DA TIROXINA (DR. CLEY) --- */
 .thyroxine-seal-card {
-  margin-top: 20px;
+  margin-top: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 24px 20px;
-  background: rgba(20, 24, 31, 0.55);
-  border: 1px solid rgba(229, 211, 179, 0.2);
+  background: rgba(20, 24, 31, 0.35);
+  border: 1px solid rgba(229, 211, 179, 0.12);
   border-radius: 20px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
   transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .thyroxine-seal-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(229, 211, 179, 0.35);
-  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.6);
+  border-color: rgba(229, 211, 179, 0.25);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.45);
 }
 
 .thyroxine-white-img {
   width: 100%;
-  max-width: 260px;
+  max-width: 250px;
   height: auto;
-  opacity: 0.5;
+  opacity: 0.3;
   display: block;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .thyroxine-seal-card:hover .thyroxine-white-img {
-  opacity: 0.7;
+  opacity: 0.45;
   transform: scale(1.02);
 }
 

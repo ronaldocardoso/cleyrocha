@@ -1,5 +1,4 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function EndocrinologiaIntegrada({ onOpenBooking }) {
@@ -58,16 +57,6 @@ export default function EndocrinologiaIntegrada({ onOpenBooking }) {
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-8 font-light">
             A endocrinologia vai além do tratamento de exames. É um acompanhamento completo, que considera você em sua totalidade: corpo, mente e rotina, para resultados duradouros e uma vida com mais disposição, saúde e bem-estar.
           </p>
-
-          <button
-            onClick={onOpenBooking}
-            className="inline-flex items-center gap-2.5 text-base font-semibold text-gold-deep hover:text-gold-primary transition-all duration-300 group"
-          >
-            <span className="border-b border-gold-deep/50 pb-0.5 group-hover:border-gold-primary">
-              Saiba mais
-            </span>
-            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-          </button>
         </motion.div>
       </div>
     </section>
