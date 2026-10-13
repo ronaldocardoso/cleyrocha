@@ -2567,11 +2567,12 @@ ul {
     display: none !important;
   }
 
-  /* Palavra ENDOCRINO grande no fundo no mobile (rebaixada +30px) */
+  /* Palavra ENDOCRINO grande no fundo no mobile (perfeitamente centralizada e sem cortes) */
   .monumental-bg {
     display: flex !important;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
     position: absolute;
     top: 130px;
     left: 50%;
@@ -2579,7 +2580,7 @@ ul {
     width: 100%;
     max-width: 100vw;
     overflow: hidden;
-    padding: 0 10px;
+    padding: 0;
     box-sizing: border-box;
     pointer-events: none;
     z-index: 1;
@@ -2587,16 +2588,18 @@ ul {
 
   .monumental-text {
     font-family: var(--font-serif-display);
-    font-size: clamp(3.2rem, 15vw, 5.6rem);
+    font-size: clamp(2.4rem, 13vw, 4.2rem);
     font-weight: 800;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
+    margin-right: -0.02em;
     color: #efe5d5;
     opacity: 0.22;
     line-height: 0.9;
     text-align: center;
     white-space: nowrap;
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: auto;
+    max-width: 98vw;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
   }
 
@@ -2809,13 +2812,22 @@ ul {
 
   .monumental-bg {
     top: 122px;
-    padding: 0 4px;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center !important;
+    text-align: center !important;
   }
 
   .monumental-text {
-    font-size: clamp(2.9rem, 15.5vw, 4.2rem);
-    letter-spacing: 0.03em;
+    font-size: clamp(2.3rem, 12.8vw, 3.8rem);
+    letter-spacing: 0.02em;
+    margin-right: -0.02em;
     opacity: 0.20;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    max-width: 98vw;
   }
 
   .tagline-text {
