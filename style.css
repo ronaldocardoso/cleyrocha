@@ -2358,7 +2358,7 @@ ul {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 110px;
+    top: 140px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -2550,8 +2550,8 @@ ul {
   .hero-title {
     position: relative;
     top: 0;
-    margin-top: 50px;
-    margin-bottom: 12px;
+    margin-top: 100px;
+    margin-bottom: 24px;
     font-size: clamp(1.85rem, 6.6vw, 2.45rem);
     line-height: 1.18;
     text-align: center;
@@ -2562,26 +2562,18 @@ ul {
     white-space: normal;
   }
 
+  /* Ocultando subtitulo no mobile conforme solicitado pelo cliente */
   .hero-subtitle {
-    position: relative;
-    top: 0;
-    margin-bottom: -30px;
-    font-size: clamp(0.88rem, 2.7vw, 0.98rem);
-    line-height: 1.6;
-    text-align: center;
-    max-width: 96%;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--text-dark-secondary);
+    display: none !important;
   }
 
-  /* Palavra ENDOCRINO grande no fundo no mobile (solicitado pelo cliente) */
+  /* Palavra ENDOCRINO grande no fundo no mobile (rebaixada +30px) */
   .monumental-bg {
     display: flex !important;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 100px;
+    top: 130px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -2647,11 +2639,11 @@ ul {
     -webkit-mask-image: linear-gradient(to bottom, black 88%, transparent 100%);
   }
 
-  /* Assinatura fixada no canto inferior sem vazar a tela */
+  /* Assinatura subida 70px no mobile para nao sobrepor a foto */
   .hero-side-badges {
     position: absolute;
-    right: 10px;
-    bottom: 12px;
+    right: 12px;
+    bottom: 82px;
     top: auto;
     left: auto;
     display: flex;
@@ -2816,7 +2808,7 @@ ul {
   }
 
   .monumental-bg {
-    top: 92px;
+    top: 122px;
     padding: 0 4px;
   }
 
@@ -2834,14 +2826,12 @@ ul {
   .hero-title {
     font-size: 1.75rem;
     line-height: 1.2;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: 20px;
   }
 
   .hero-subtitle {
-    font-size: 0.88rem;
-    line-height: 1.55;
-    margin-bottom: -34px;
+    display: none !important;
   }
 
   .doctor-image-wrapper {
@@ -2865,8 +2855,8 @@ ul {
   }
 
   .hero-side-badges {
-    right: 6px;
-    bottom: 8px;
+    right: 8px;
+    bottom: 78px;
     max-width: 175px;
   }
 
