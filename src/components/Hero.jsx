@@ -40,7 +40,7 @@ export default function Hero({ onOpenBooking }) {
         className="absolute top-[16%] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none z-0"
       >
         <span className="font-display font-bold text-[clamp(5.5rem,15vw,16rem)] tracking-[0.14em] text-monumental-gradient inline-block whitespace-nowrap opacity-60">
-          ENDOCRINO
+          ENDÓCRINO
         </span>
       </motion.div>
 
